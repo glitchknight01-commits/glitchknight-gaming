@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GlitchKnight Gaming | Free High Graphics Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(90deg, #7f00ff, #e100ff);
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      height: 55px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.6);
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e100ff;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(225,0,255,0.3);
+    }
+
+    .card h3 {
+      color: #e100ff;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #7f00ff;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: 1px solid #7f00ff;
+      background: #111;
+      color: #fff;
+    }
+
+    textarea {
+      resize: none;
+      height: 90px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #7f00ff, #e100ff);
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" class="logo" >
+  <h1>GlitchKnight Gaming</h1>
+</header>
+
+<nav>
+  <a href="#news">Game News</a>
+  <a href="#free">Free Games</a>
+  <a href="#high">High Graphics</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#about">About</a>
+</nav>
+
+<!-- GAME NEWS -->
+<section id="news">
+  <h2>📰 Latest Game News</h2>
+
+  <div class="card">
+    <p id="newsText">No updates yet. Stay tuned 🎮</p>
+  </div>
+
+  <div class="card" id="editorLogin">
+    <h3>🔐 Editor Login</h3>
+    <input type="password" id="editorPassword" placeholder="Editor Password">
+    <button onclick="checkEditor()">Login</button>
+  </div>
+
+  <div class="card" id="editorPanel" style="display:none;">
+    <h3>✏️ Update Game News</h3>
+    <textarea id="newsInput" placeholder="Write update..."></textarea>
+    <button onclick="updateNews()">Update</button>
+  </div>
+</section>
+
+<!-- FREE GAMES -->
+<section id="free">
+  <h2>🎮 Free Games</h2>
+
+  <div class="card"><h3>Call of Duty: Warzone</h3><span class="tag">PC</span></div>
+  <div class="card"><h3>BGMI</h3><span class="tag">Mobile</span></div>
+  <div class="card"><h3>Destiny 2</h3><span class="tag">PC</span></div>
+  <div class="card"><h3>eFOOTBALL</h3><span class="tag">PC (Steam)</span></div>
+</section>
+
+<!-- HIGH GRAPHICS -->
+<section id="high">
+  <h2>🔥 High Graphics Games</h2>
+  <div class="card"><h3>GTA V</h3><span class="tag">PC</span></div>
+</section>
+
+<!-- FEEDBACK -->
+<section id="feedback">
+  <h2>💬 Feedback</h2>
+  <div class="card">
+    <input id="fbName" placeholder="Your Name">
+    <input id="fbEmail" placeholder="Your Email">
+    <textarea id="fbMessage" placeholder="Your feedback..."></textarea>
+    <button onclick="submitFeedback()">Submit Feedback</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>👑 About GlitchKnight Gaming</h2>
+  <div class="card">
+    <p>Managed by <b>GlitchKnight Gaming</b></p>
+    <p>📸 <a href="https://www.instagram.com/glitchknight_gaming69" target="_blank" style="color:#e100ff;">Instagram</a></p>
+    <p>📘 <a href="https://www.facebook.com/share/1EyqeJh2Mr/" target="_blank" style="color:#e100ff;">Facebook</a></p>
+    <p>💬 <a href="https://discord.gg/zVZMFgwSg" target="_blank" style="color:#e100ff;">Discord</a></p>
+    <p>📧 <a href="mailto:glitchknight69@gmail.com" style="color:#e100ff;">Email</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 GlitchKnight Gaming
+</footer>
+
+<script>
+const EDITOR_PASSWORD = "glitchknight123";
+
+document.getElementById("newsText").innerText =
+  localStorage.getItem("gameNews") || "No updates yet. Stay tuned 🎮";
+
+function checkEditor() {
+  if (editorPassword.value === EDITOR_PASSWORD) {
+    editorLogin.style.display = "none";
+    editorPanel.style.display = "block";
+    alert("Editor access granted 👑");
+  } else alert("Wrong password ❌");
+}
+
+function updateNews() {
+  if (!newsInput.value.trim()) return alert("Write something!");
+  localStorage.setItem("gameNews", newsInput.value);
+  newsText.innerText = newsInput.value;
+  newsInput.value = "";
+}
+
+function submitFeedback() {
+  if (!fbName.value || !fbMessage.value) return alert("Fill required fields!");
+  let fb = JSON.parse(localStorage.getItem("feedback")) || [];
+  fb.push({name: fbName.value, email: fbEmail.value, msg: fbMessage.value});
+  localStorage.setItem("feedback", JSON.stringify(fb));
+  fbName.value = fbEmail.value = fbMessage.value = "";
+  alert("Thanks for feedback ❤️🎮");
+}
+</script>
+
+</body>
+</html>
