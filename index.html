@@ -2,243 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GlitchKnight Gaming | Free High Graphics Games</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GlitchKnight Gaming - GTA V gameplay, cinematic reels, racing challenges, and gaming shorts.">
+  <title>GlitchKnight Gaming | GTA V & Action Gaming Content</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-    }
+  <!-- Google Fonts for a modern esports style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    header {
-      background: linear-gradient(90deg, #7f00ff, #e100ff);
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .logo {
-      width: 55px;
-      height: 55px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0,255,255,0.6);
-    }
-
-    header h1 {
-      font-size: 22px;
-    }
-
-    nav {
-      background: #111;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #e100ff;
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    .card {
-      background: #1a1a1a;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(225,0,255,0.3);
-    }
-
-    .card h3 {
-      color: #e100ff;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #7f00ff;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 12px;
-      margin-top: 5px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 8px;
-      border: 1px solid #7f00ff;
-      background: #111;
-      color: #fff;
-    }
-
-    textarea {
-      resize: none;
-      height: 90px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background: linear-gradient(90deg, #7f00ff, #e100ff);
-      border: none;
-      border-radius: 25px;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <!-- Background glow decorations -->
+  <div class="bg-glow bg-glow-cyan" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-purple" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-red" aria-hidden="true"></div>
 
-<header>
-  <img src="logo.png.jpeg" class="logo" alt="GlitchKnight Gaming logo">
-  <h1>GlitchKnight Gaming</h1>
-</header>
+  <!-- Navbar -->
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a href="#home" class="brand" aria-label="GlitchKnight Gaming Home">
+        <img src="logo.png.jpeg" alt="GlitchKnight Gaming logo" class="brand-logo">
+        <span>GlitchKnight Gaming</span>
+      </a>
 
-<nav>
-  <a href="#news">Game News</a>
-  <a href="#free">Free Games</a>
-  <a href="#high">High Graphics</a>
-  <a href="#feedback">Feedback</a>
-  <a href="#youtube">YouTube</a>
-  <a href="#about">About</a>
-</nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- GAME NEWS -->
-<section id="news">
-  <h2>📰 Latest Game News</h2>
+  <main>
+    <!-- Hero -->
+    <section class="hero container section-gap" aria-label="Hero section">
+      <p class="eyebrow">YouTube Gaming Channel</p>
+      <h1>GlitchKnight Gaming – GTA V &amp; Action Gaming Content</h1>
+      <p class="hero-subtitle">
+        High-speed GTA V races, cinematic gameplay reels, and action-packed gaming shorts for true enthusiasts.
+      </p>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="cta-btn">
+        Subscribe on YouTube
+      </a>
+    </section>
 
-  <div class="card">
-    <p id="newsText">No updates yet. Stay tuned 🎮</p>
-  </div>
+    <!-- Featured Content -->
+    <section class="container section-gap" aria-labelledby="featured-title">
+      <h2 id="featured-title">Featured Content</h2>
+      <div class="card-grid">
+        <article class="feature-card">
+          <h3>GTA V Cinematic Reels</h3>
+          <p>Immersive edits with dramatic camera angles, city lights, and story-driven gameplay moments.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Drag Races &amp; Challenges</h3>
+          <p>Head-to-head races, custom builds, and no-mercy challenge runs where speed decides everything.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Shorts &amp; Clips</h3>
+          <p>Quick, intense highlights designed for viewers who love instant action and stylish finishes.</p>
+        </article>
+      </div>
+    </section>
 
-  <div class="card" id="editorLogin">
-    <h3>🔐 Editor Login</h3>
-    <input type="password" id="editorPassword" placeholder="Editor Password">
-    <button onclick="checkEditor()">Login</button>
-  </div>
+    <!-- Latest Videos -->
+    <section class="container section-gap" id="videos" aria-labelledby="videos-title">
+      <h2 id="videos-title">Latest Videos</h2>
+      <div class="video-grid">
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="GTA V cinematic reel" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="Racing challenge video" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="Gaming shorts compilation" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
 
-  <div class="card" id="editorPanel" style="display:none;">
-    <h3>✏️ Update Game News</h3>
-    <textarea id="newsInput" placeholder="Write update..."></textarea>
-    <button onclick="updateNews()">Update</button>
-  </div>
-</section>
+    <!-- About -->
+    <section class="container section-gap" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About the Creator</h2>
+      <div class="about-panel">
+        <p>
+          GlitchKnight Gaming is dedicated to delivering high-quality GTA V gameplay with a signature cinematic style.
+          From drag races and challenge events to bite-sized shorts, every upload is crafted for gamers who enjoy
+          speed, action, and visual impact.
+        </p>
+      </div>
+    </section>
 
-<!-- FREE GAMES -->
-<section id="free">
-  <h2>🎮 Free Games</h2>
+    <!-- Contact -->
+    <section class="container section-gap" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact &amp; Social</h2>
+      <div class="contact-panel">
+        <p>Connect and watch more content on YouTube:</p>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="cta-btn cta-small">
+          Visit YouTube Channel
+        </a>
+      </div>
+    </section>
+  </main>
 
-  <div class="card"><h3>Call of Duty: Warzone</h3><span class="tag">PC</span></div>
-  <div class="card"><h3>BGMI</h3><span class="tag">Mobile</span></div>
-  <div class="card"><h3>Destiny 2</h3><span class="tag">PC</span></div>
-  <div class="card"><h3>eFOOTBALL</h3><span class="tag">PC (Steam)</span></div>
-</section>
-
-<!-- HIGH GRAPHICS -->
-<section id="high">
-  <h2>🔥 High Graphics Games</h2>
-  <div class="card"><h3>GTA V</h3><span class="tag">PC</span></div>
-</section>
-
-<!-- FEEDBACK -->
-<section id="feedback">
-  <h2>💬 Feedback</h2>
-  <div class="card">
-    <input id="fbName" placeholder="Your Name">
-    <input id="fbEmail" placeholder="Your Email">
-    <textarea id="fbMessage" placeholder="Your feedback..."></textarea>
-    <button onclick="submitFeedback()">Submit Feedback</button>
-  </div>
-</section>
-
-<!-- YOUTUBE VIDEOS -->
-<section id="youtube">
-  <h2>📺 Our YouTube Videos</h2>
-
-  <div class="card" style="text-align:center;">
-    <p>Watch latest videos from <b>GlitchKnight Gaming</b> 🎮</p>
-
-    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;">
-      <iframe
-        src="https://www.youtube.com/embed/VIDEO_ID_HERE"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-        allowfullscreen>
-      </iframe>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 GlitchKnight Gaming. All rights reserved.</p>
+      <p>Built for the gaming community.</p>
     </div>
-
-  </div>
-</section>
-
-
-<!-- ABOUT -->
-<section id="about">
-  <h2>👑 About GlitchKnight Gaming</h2>
-  <div class="card">
-    <p>Managed by <b>GlitchKnight Gaming</b></p>
-    <p>📸 <a href="https://www.instagram.com/glitchknight_gaming69" target="_blank" style="color:#e100ff;">Instagram</a></p>
-    <p>📘 <a href="https://www.facebook.com/share/1EyqeJh2Mr/" target="_blank" style="color:#e100ff;">Facebook</a></p>
-    <p>💬 <a href="https://discord.gg/zVZMFgwSg" target="_blank" style="color:#e100ff;">Discord</a></p>
-    <p>📧 <a href="mailto:glitchknight69@gmail.com" style="color:#e100ff;">glitchknight69@gmail.com</a></p>
-  </div>
-</section>
-
-<footer>
-  © 2026 GlitchKnight Gaming
-</footer>
-
-<script>
-const EDITOR_PASSWORD = "glitchknight123";
-
-document.getElementById("newsText").innerText =
-  localStorage.getItem("gameNews") || "No updates yet. Stay tuned 🎮";
-
-function checkEditor() {
-  if (editorPassword.value === EDITOR_PASSWORD) {
-    editorLogin.style.display = "none";
-    editorPanel.style.display = "block";
-    alert("Editor access granted 👑");
-  } else alert("Wrong password ❌");
-}
-
-function updateNews() {
-  if (!newsInput.value.trim()) return alert("Write something!");
-  localStorage.setItem("gameNews", newsInput.value);
-  newsText.innerText = newsInput.value;
-  newsInput.value = "";
-}
-
-function submitFeedback() {
-  if (!fbName.value || !fbMessage.value) return alert("Fill required fields!");
-  let fb = JSON.parse(localStorage.getItem("feedback")) || [];
-  fb.push({name: fbName.value, email: fbEmail.value, msg: fbMessage.value});
-  localStorage.setItem("feedback", JSON.stringify(fb));
-  fbName.value = fbEmail.value = fbMessage.value = "";
-  alert("Thanks for feedback ❤️🎮");
-}
-</script>
-
+  </footer>
 </body>
 </html>
